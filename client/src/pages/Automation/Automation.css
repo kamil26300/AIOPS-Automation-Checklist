@@ -1,0 +1,45 @@
+.io {
+  display: flex;
+  overflow: hidden;
+}
+
+.io .automation-container {
+  display: flex;
+  min-width: calc(100vw);
+}
+
+.io .automation-container .left {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 5px;
+  margin-right: 15px;
+}
+
+.io .automation-container .right {
+  margin-left: 15px;
+  width: 100%;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  margin: 0;
+  padding: 0;
+}
+
+.io .output {
+  min-width: calc(100vw);
+  position: relative;
+  height: var(--outA);
+  display: flex;
+  flex-direction: row;
+  gap: 0;
+}
+
+.io .output button {
+  top: 26px;
+  left: 25px;
+  position: absolute;
+  padding: 0.1rem 1rem;
+  z-index: 10;
+  height: min-content;
+}

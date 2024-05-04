@@ -1,0 +1,36 @@
+::-webkit-inner-spin-button,
+::-webkit-outer-spin-button {
+  display: none;
+}
+
+.input {
+  justify-content: right;
+  display: flex;
+  gap: 5px;
+}
+
+.input h3 {
+  margin: 0;
+  transform: translateY(-2px);
+}
+
+.multi-range-slider, .multi-range-slider .bar-inner, .multi-range-slider .bar-right, .multi-range-slider .bar-left, .multi-range-slider .thumb::before  {
+  border: none;
+  box-shadow: none;
+}
+
+.multi-range-slider .thumb::before {
+  transform: translateY(4px);
+  height: 15px;
+  width: 15px;
+}
+
+.outerContainer .innerContainer .form input[type="number"] {
+  padding: 6px;
+  box-shadow: none;
+  border: none;
+}
+
+.multi-range-slider {
+  padding: 0;
+}

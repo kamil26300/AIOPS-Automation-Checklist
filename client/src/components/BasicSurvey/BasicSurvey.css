@@ -1,0 +1,167 @@
+.basic-survey .q-container .options {
+  display: grid;
+  width: 100%;
+  grid-template-columns: 1fr 1fr;
+  gap: 5px;
+}
+
+.basic-survey .q-container .options.number {
+  display: flex;
+}
+
+.basic-survey .q-container .options .option {
+  display: flex;
+  gap: 8px;
+}
+
+.basic-survey .q-container .question {
+  font-weight: 600;
+}
+
+.basic-survey .q-container .options .option input[type="radio"] {
+  appearance: none;
+  -moz-appearance: none;
+  -webkit-appearance: none;
+  cursor: pointer;
+  margin: auto 0;
+  height: 15px;
+  width: 15px;
+  border-radius: 50%;
+  border: var(--blue-2) solid 1px;
+}
+
+.basic-survey .q-container .options.number .option input[type="number"] {
+  width: 10%;
+  border: none;
+  border-bottom: var(--blue-2) solid 1px;
+}
+
+.basic-survey .q-container .options.number .option input[type="number"]:focus {
+  border: none;
+  outline: none;
+  border-bottom: var(--blue-1) solid 1px;
+}
+
+.basic-survey .q-container .options .option input[type="radio"]:checked {
+  border: var(--blue-2) solid 5px;
+}
+
+.basic-survey {
+  border-left: var(--grey-1) solid 1px;
+  border-top: var(--grey-1) solid 1px;
+  padding: 25px 0 25px 25px;
+  border-radius: 10px 0 0 0;
+  display: flex;
+  flex-direction: column;
+  width: calc(100% - 40px);
+  height: calc(var(--outA) - 45px);
+  overflow-y: auto;
+  gap: 15px;
+  scrollbar-width: none;
+  -ms-overflow-style: none;
+}
+
+.basic-survey .head-flex {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+}
+
+.basic-survey::-webkit-scrollbar {
+  width: 0.3rem;
+}
+
+.basic-survey::-webkit-scrollbar-thumb {
+  border-radius: 10px;
+  background-color: var(--grey-1);
+}
+
+.basic-survey .q-container {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  text-align: justify;
+}
+
+.navSurvey {
+  display: flex;
+  width: min-content;
+  gap: var(--main-gap);
+  align-self: last baseline;
+  user-select: none;
+}
+
+.navSurvey .btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 30px;
+  width: 30px;
+  border-radius: 50%;
+  border: none;
+  cursor: pointer;
+  transition: opacity 0.5s;
+  background-color: var(--blue-2);
+}
+
+.navSurvey button:disabled:hover {
+  cursor: not-allowed;
+}
+
+.navSurvey .btn:hover {
+  opacity: 0.7;
+}
+
+.navSurvey button:disabled {
+  opacity: 0.1 !important;
+}
+
+.calculate {
+  padding: 0 1rem;
+  position: relative;
+  font-weight: bolder;
+  border: transparent;
+  outline: transparent;
+  cursor: pointer;
+  user-select: none;
+  white-space: nowrap;
+  margin-right: 30px;
+  animation: glow 2.5s linear infinite;
+}
+
+.calculate-gradient {
+  background: linear-gradient(90deg, var(--blue-3), cyan, var(--blue-3));
+  background-size: 300%;
+  border-radius: 2em;
+}
+
+.calculate::before {
+  position: absolute;
+  content: "";
+  top: -5px;
+  left: -5px;
+  bottom: -5px;
+  right: -5px;
+  z-index: -1;
+  background: inherit;
+  background-size: inherit;
+  border-radius: 4em;
+  opacity: 0;
+  transition: 0.5s;
+}
+
+.calculate:hover::before {
+  opacity: 1;
+  filter: blur(15px);
+  animation: glow 2.5s linear infinite;
+}
+
+@keyframes glow {
+  to {
+    background-position: 300%;
+  }
+}
+
+.calculate img {
+  height: 1.4rem;
+}

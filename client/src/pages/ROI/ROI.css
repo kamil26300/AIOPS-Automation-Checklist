@@ -1,0 +1,101 @@
+:root {
+  --main-gap: 30px;
+  --blue-1: rgb(10, 48, 99);
+  --blue-2: rgb(0, 126, 174);
+  --blue-3: rgb(47, 166, 255);
+  --grey-1: #00000046;
+}
+
+/*body {
+  overflow: hidden; 
+}*/
+
+.form {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 10px;
+  border-radius: 0 15px 15px 0;
+  border: 1px var(--grey-1) solid;
+}
+
+.form .fields {
+  margin: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: var(--main-gap);
+}
+
+.form .fields .outer-container:first-child {
+  border-top: none;
+  padding: 0 0 20px 0;
+}
+
+.form .fields .outer-container {
+  padding: 20px 0;
+  border-top: var(--grey-1) solid 1px;
+}
+
+.form .title {
+  background-color: var(--blue-1);
+  color: white;
+  text-align: center;
+  border-radius: 0 15px 0 0;
+}
+
+.innerContainer {
+  display: flex;
+  gap: var(--main-gap);
+}
+
+.outerContainer {
+  display: flex;
+  gap: 10px;
+  flex-direction: column;
+}
+
+.output {
+  display: flex;
+  flex-direction: column;
+  gap: var(--main-gap);
+}
+
+.buttonContainer {
+  display: flex;
+  gap: var(--main-gap);
+}
+
+button.submitBtn {
+  color: #fff;
+  background-color: var(--blue-2);
+  border: none;
+  border-radius: 5px;
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+button.submitBtn:hover {
+  background-color: var(--blue-3);
+}
+
+button.resetBtn {
+  background-color: transparent;
+  border: solid var(--blue-2) 1px;
+  border-radius: 5px;
+  color: var(--blue-2);
+  cursor: pointer;
+  font-size: 16px;
+  text-decoration: underline;
+  padding: 10px 20px;
+}
+
+button.resetBtn:hover {
+  border: solid var(--blue-3) 1px;
+  text-decoration: none;
+  color: var(--blue-3);
+}
+
+.outerContainer .innerContainer .form .title h3 {
+  margin: 20px 0;
+}

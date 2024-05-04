@@ -1,0 +1,38 @@
+.tabs {
+  display: flex;
+}
+
+.tab {
+  position: relative;
+  padding: 10px 20px;
+  cursor: pointer;
+  font-weight: bold;
+  transition: color 0.3s ease;
+}
+
+.tab::before {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 0;
+  height: 2px;
+  background-color: var(--blue-3);
+  transition: width 0.7s ease;
+  transform-origin: left;
+}
+
+.tab.active::before {
+  width: 100%;
+}
+
+.head h1 {
+  margin: 0 auto;
+  text-align: center;
+  color: #168eff;
+}
+
+.head {
+  display: flex;
+  margin: 20px 20px 0 20px;
+}

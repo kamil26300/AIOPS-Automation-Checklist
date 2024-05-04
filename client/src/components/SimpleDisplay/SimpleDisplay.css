@@ -1,0 +1,20 @@
+.heading h1, .heading h5 {
+  align-self: baseline;
+  margin: 0;
+}
+
+.simple-display div {
+  width: fit-content;
+  display: flex;
+  gap: 5px;
+}
+
+.simple-display .suffix {
+  font-size: 30px;
+}
+
+.simple-display .value {
+  text-align: center;
+  font-size: 26px;
+  margin: auto;
+}

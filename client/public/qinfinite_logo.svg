@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="50.049"
+  height="39" viewBox="0 0 50.049 39">
+  <defs>
+    <linearGradient id="a" x1="0.49" y1="1.058" x2="0.523" y2="0.021"
+      gradientUnits="objectBoundingBox">
+      <stop offset="0" stop-color="#fbb040" />
+      <stop offset="1" stop-color="#f9ed32" />
+    </linearGradient>
+    <linearGradient id="b" x1="0.5" x2="0.5" y2="1" gradientUnits="objectBoundingBox">
+      <stop offset="0" stop-color="#00c6ff" />
+      <stop offset="1" stop-color="#0072ff" />
+    </linearGradient>
+  </defs>
+  <g transform="translate(-171.1 -119.42)">
+    <path d="M258.64,130.633l5.729-5.731,5.776,5.776,2.752-2.754-8.5-8.5L255.91,127.9l2.73,2.73Z"
+      transform="translate(-68.26)" fill="url(#a)" />
+    <path
+      d="M207.378,177l-2.761,2.752-8.483,8.483L193.4,185.5l-5.772-5.77h0L184.9,177l-2.732,2.732h0L171.1,190.8l13.965,13.967,11.069-11.069h0l2.732,2.732,8.317,8.313,13.967-13.967Zm-22.313,22.3-8.5-8.5,8.339-8.333,5.774,5.776,2.732,2.732h0Zm16.529-5.607-2.732-2.732h0l8.516-8.5,8.315,8.315-8.51,8.5Z"
+      transform="translate(0 -46.343)" fill="url(#b)" />
+  </g>
+</svg>
